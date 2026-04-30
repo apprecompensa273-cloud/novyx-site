@@ -3,7 +3,7 @@
 // ============================================================
 
 // URL da API do bot (mude para o endereço do seu servidor)
-const API_URL = "https://200.216.34.98:3000";
+const API_URL = "";
 
 // ── BUSCA DADOS DA API ──
 async function fetchStats() {
