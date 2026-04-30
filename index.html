@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novyx — Bot multifuncional para Discord</title>
+  <meta name="description" content="Novyx é o bot público completo para Discord. Economia, moderação, diversão, social e muito mais. Adicione agora!" />
+  <meta property="og:title" content="Novyx Bot" />
+  <meta property="og:description" content="O bot multifuncional para o seu servidor Discord." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fira+Code:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav>
+  <div class="nav-logo">
+    <span>✦</span> Novyx
+  </div>
+  <div class="nav-links">
+    <a href="#features">Recursos</a>
+    <a href="#commands">Comandos</a>
+    <a href="#stats">Estatísticas</a>
+    <a href="#cta" class="nav-cta">➕ Adicionar ao servidor</a>
+  </div>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Online e funcionando
+    </div>
+    <h1>O bot que o seu<br>servidor precisava</h1>
+    <p>Novyx traz economia, moderação, diversão e social em um único bot. Gratuito, rápido e fácil de configurar.</p>
+    <div class="hero-btns">
+      <a href="#" class="btn btn-primary">➕ Adicionar ao Discord</a>
+      <a href="#commands" class="btn btn-outline">📋 Ver comandos</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="num count-up" data-stat="guilds" data-target="1200" data-suffix="+">1.200+</div>
+        <div class="lbl">Servidores</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num count-up" data-stat="commands" data-target="40" data-suffix="+">40+</div>
+        <div class="lbl">Comandos</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num">99.9%</div>
+        <div class="lbl">Uptime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FEATURES ══════════════ -->
+<section id="features">
+  <div class="text-center fade-in">
+    <span class="section-label">Recursos</span>
+    <h2 class="section-title">Tudo que você precisa</h2>
+    <p class="section-sub">Do básico ao avançado, o Novyx tem tudo para animar e gerenciar seu servidor.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card fade-in">
+      <div class="feature-icon">💰</div>
+      <h3>Sistema de Economia</h3>
+      <p>Moeda própria (Nóvs), banco, loja, itens, trabalho, pescaria, mineração e roubo entre membros.</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🛡️</div>
+      <h3>Moderação Completa</h3>
+      <p>Ban, kick, mute, warns, clear de mensagens e logs de moderação para manter a ordem no servidor.</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">🎉</div>
+      <h3>Diversão Garantida</h3>
+      <p>Sorteios, verdade ou desafio, coinflip, dado, 8ball, ship-o-metro e muito mais para animar o chat.</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">👥</div>
+      <h3>Social & Perfil</h3>
+      <p>Sistema de XP, nível, reputação, perfil personalizável, casamento e interações como abraço e beijar.</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">⚡</div>
+      <h3>Slash Commands</h3>
+      <p>Todos os comandos disponíveis como slash commands / e com prefixo &gt;. Escolha como preferir.</p>
+    </div>
+    <div class="feature-card fade-in">
+      <div class="feature-icon">⚙️</div>
+      <h3>Configurável</h3>
+      <p>Prefixo por servidor, canal de boas-vindas com mensagem personalizada e muito mais.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ COMMANDS ══════════════ -->
+<section id="commands">
+  <div class="text-center fade-in">
+    <span class="section-label">Comandos</span>
+    <h2 class="section-title">40+ comandos disponíveis</h2>
+    <p class="section-sub">Use o prefixo <code style="background:rgba(255,255,255,.1);padding:.1em .4em;border-radius:4px">&gt;</code> ou os slash commands <code style="background:rgba(255,255,255,.1);padding:.1em .4em;border-radius:4px">/</code></p>
+  </div>
+
+  <div class="cmd-tabs fade-in">
+    <button class="cmd-tab active" data-cat="utilidade">🔧 Utilidade</button>
+    <button class="cmd-tab" data-cat="diversao">🎉 Diversão</button>
+    <button class="cmd-tab" data-cat="economia">💰 Economia</button>
+    <button class="cmd-tab" data-cat="social">👥 Social</button>
+    <button class="cmd-tab" data-cat="moderacao">🛡️ Moderação</button>
+  </div>
+
+  <!-- Utilidade -->
+  <div class="cmd-list active" id="cmd-utilidade">
+    <div class="cmd-card fade-in"><div class="cmd-name">/ping</div><div class="cmd-desc">Mostra a latência do bot (Gateway e API).</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/ajuda [comando]</div><div class="cmd-desc">Lista todos os comandos ou detalha um específico.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/serverinfo</div><div class="cmd-desc">Informações completas sobre o servidor.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/userinfo [@user]</div><div class="cmd-desc">Informações sobre um usuário.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/avatar [@user]</div><div class="cmd-desc">Mostra o avatar de um usuário em alta resolução.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/lembrete &lt;tempo&gt; &lt;msg&gt;</div><div class="cmd-desc">Define um lembrete. Ex: 1h, 30m, 2d.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/enquete &lt;pergunta&gt;</div><div class="cmd-desc">Cria uma enquete com até 4 opções e reações.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/calc &lt;expressão&gt;</div><div class="cmd-desc">Calculadora simples. Ex: 2 + 2 * 10.</div></div>
+  </div>
+
+  <!-- Diversão -->
+  <div class="cmd-list" id="cmd-diversao">
+    <div class="cmd-card fade-in"><div class="cmd-name">/coinflip [cara|coroa]</div><div class="cmd-desc">Joga uma moeda. Tente adivinhar o resultado!</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/8ball &lt;pergunta&gt;</div><div class="cmd-desc">A bola mágica responde sua pergunta.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/ship @u1 @u2</div><div class="cmd-desc">Calcula a compatibilidade entre dois usuários.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/dado [NdN]</div><div class="cmd-desc">Rola dados. Ex: 2d20, 1d6, 3d10.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/escolher &lt;op1, op2...&gt;</div><div class="cmd-desc">Escolhe aleatoriamente entre as opções.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/sorteio &lt;tempo&gt; &lt;prêmio&gt;</div><div class="cmd-desc">Cria um sorteio com botão de participação.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/vdd</div><div class="cmd-desc">Verdade ou Desafio! Com botões interativos.</div></div>
+  </div>
+
+  <!-- Economia -->
+  <div class="cmd-list" id="cmd-economia">
+    <div class="cmd-card fade-in"><div class="cmd-name">/saldo [@user]</div><div class="cmd-desc">Mostra a carteira e banco de Nóvs.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/daily</div><div class="cmd-desc">Recompensa diária com bônus de streak.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/trabalho</div><div class="cmd-desc">Trabalha e ganha Nóvs. Cooldown: 1 hora.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/pescar</div><div class="cmd-desc">Pesca peixes raros e ganha Nóvs. Requer 🎣 vara.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/minerar</div><div class="cmd-desc">Minera recursos preciosos. Requer ⛏️ picareta.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/roubar @user</div><div class="cmd-desc">Tenta roubar Nóvs de alguém. Pode sair mal!</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/transferir @user &lt;val&gt;</div><div class="cmd-desc">Transfere Nóvs para outro usuário.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/depositar / /sacar</div><div class="cmd-desc">Movimenta Nóvs entre carteira e banco.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/loja</div><div class="cmd-desc">Mostra os itens disponíveis para comprar.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/comprar &lt;item&gt;</div><div class="cmd-desc">Compra um item da loja com Nóvs.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/ranking [tipo]</div><div class="cmd-desc">Top 10 de moedas, XP ou reputação.</div></div>
+  </div>
+
+  <!-- Social -->
+  <div class="cmd-list" id="cmd-social">
+    <div class="cmd-card fade-in"><div class="cmd-name">/perfil [@user]</div><div class="cmd-desc">Perfil com bio, nível, saldo e casamento.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/nivel [@user]</div><div class="cmd-desc">Nível, XP e ranking global.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/bio &lt;texto&gt;</div><div class="cmd-desc">Define sua bio no perfil.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/rep @user</div><div class="cmd-desc">Dá +1 de reputação. Cooldown: 12h.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/casar @user</div><div class="cmd-desc">Proposta de casamento. Requer 💍 anel.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/divorcar</div><div class="cmd-desc">Se divorcia do parceiro(a) atual.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/abraçar /beijar @user</div><div class="cmd-desc">Interações sociais com GIFs animados.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/tapa /highfive @user</div><div class="cmd-desc">Mais interações divertidas entre membros.</div></div>
+  </div>
+
+  <!-- Moderação -->
+  <div class="cmd-list" id="cmd-moderacao">
+    <div class="cmd-card fade-in"><div class="cmd-name">/ban @user [motivo]</div><div class="cmd-desc">Bane um membro do servidor.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/kick @user [motivo]</div><div class="cmd-desc">Expulsa um membro do servidor.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/mute @user &lt;tempo&gt;</div><div class="cmd-desc">Silencia um membro por tempo determinado.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/warn @user [motivo]</div><div class="cmd-desc">Dá uma advertência ao membro.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/warns @user</div><div class="cmd-desc">Lista todas as advertências de um membro.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/clear &lt;1-100&gt;</div><div class="cmd-desc">Deleta mensagens em massa do canal.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/config prefixo</div><div class="cmd-desc">Altera o prefixo do bot no servidor.</div></div>
+    <div class="cmd-card fade-in"><div class="cmd-name">/config boas_vindas</div><div class="cmd-desc">Configura canal e mensagem de boas-vindas.</div></div>
+  </div>
+</section>
+
+<!-- ══════════════ STATS ══════════════ -->
+<section id="stats">
+  <div class="text-center fade-in">
+    <span class="section-label">Números</span>
+    <h2 class="section-title">Crescendo todo dia</h2>
+    <p class="section-sub">Novyx está em constante crescimento com novos servidores e usuários.</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card fade-in">
+      <div class="num count-up" data-stat="guilds" data-target="1200" data-suffix="+">1.200+</div>
+      <div class="lbl">🏠 Servidores</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="num count-up" data-stat="users" data-target="15000" data-suffix="+">15.000+</div>
+      <div class="lbl">👤 Usuários</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="num count-up" data-stat="commands" data-target="40" data-suffix="+">40+</div>
+      <div class="lbl">⚡ Comandos</div>
+    </div>
+    <div class="stat-card fade-in">
+      <div class="num">99.9%</div>
+      <div class="lbl">📡 Uptime</div>
+    </div>
+  </div>
+
+  <!-- Leaderboard -->
+  <div style="margin-top:4rem" class="fade-in">
+    <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:1.5rem;text-align:center">🏆 Top Usuários (Nóvs)</h3>
+    <div id="leaderboard-list" style="max-width:600px;margin:0 auto;display:flex;flex-direction:column;gap:.75rem">
+      <p style="color:var(--text-muted);text-align:center">Carregando...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ CTA ══════════════ -->
+<section id="cta">
+  <div class="fade-in">
+    <h2>Pronto para começar?</h2>
+    <p>Adicione o Novyx ao seu servidor agora mesmo. É gratuito!</p>
+    <div class="hero-btns">
+      <a href="#" class="btn btn-primary">➕ Adicionar ao Discord</a>
+      <a href="#" class="btn btn-outline">💬 Servidor de Suporte</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo"><span>✦</span> Novyx</div>
+      <p>Bot público multifuncional para Discord. Gratuito, rápido e repleto de recursos.</p>
+    </div>
+    <div>
+      <h4>Bot</h4>
+      <ul>
+        <li><a href="#">Adicionar</a></li>
+        <li><a href="#commands">Comandos</a></li>
+        <li><a href="#features">Recursos</a></li>
+        <li><a href="#">Changelog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Suporte</h4>
+      <ul>
+        <li><a href="#">Servidor Discord</a></li>
+        <li><a href="#">Documentação</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Reportar Bug</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Termos de Uso</a></li>
+        <li><a href="#">Privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Novyx. Feito com ❤️ para a comunidade Discord.</p>
+    <div class="social-links">
+      <a href="#" title="Discord">💬</a>
+      <a href="#" title="GitHub">🐙</a>
+      <a href="#" title="Twitter">🐦</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
